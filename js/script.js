@@ -1,26 +1,49 @@
 botaoCriptografar = document.querySelector('#btn-cripto');
+botaoDescriptografar = document.querySelector('#btn-descripto')
 
-textoCapturado = "";
 var textoCriptografado = '';
+
+/*Função Criptografar*/
 
 botaoCriptografar.addEventListener("click", function criptografar(event){
 
-   event.preventDefault();
+  event.preventDefault();
   
   form = document.querySelector("#form-entrada");
-  var textoCapturado = form.inputTexto.value;
-
-    textoCriptografado = textoCapturado.replace(/a/gi, 'ai'); 
-    textoCriptografado = textoCapturado.replace(/e/gi, 'enter'); 
-    textoCriptografado = textoCapturado.replace(/i/gi, 'imes'); 
-    textoCriptografado = textoCapturado.replace(/o/gi, 'ober'); 
-    textoCriptografado = textoCapturado.replace(/u/gi, 'ufat'); 
-
-          
+  var textoCapturado = form.inputTexto.value;    
+   
+    textoCapturado = textoCapturado.replaceAll('e','enter'); 
+    textoCapturado = textoCapturado.replaceAll('i', 'imes');
+    textoCapturado = textoCapturado.replaceAll('a','ai'); 
+    textoCapturado = textoCapturado.replaceAll('o','ober'); 
+    textoCapturado = textoCapturado.replaceAll('u','ufat');           
       
-    return console.log(textoCriptografado);
+  return console.log(textoCapturado);
   
 })
+
+/*função Descriptografar*/
+botaoDescriptografar.addEventListener("click", function descriptografar(event){
+
+  event.preventDefault();
+ 
+  form = document.querySelector("#form-entrada");
+  var textoCriptografado = form.inputTexto.value;   
+  
+    textoCriptografado = textoCriptografado.replaceAll('enter','e'); 
+    textoCriptografado = textoCriptografado.replaceAll('imes', 'i');
+    textoCriptografado = textoCriptografado.replaceAll('ai','a'); 
+    textoCriptografado = textoCriptografado.replaceAll('ober','o'); 
+    textoCriptografado = textoCriptografado.replaceAll('ufat','u'); 
+         
+     
+return console.log(textoCriptografado);
+ 
+})
+
+/*Exibir texto criptografado*/
+
+
 
 
 
