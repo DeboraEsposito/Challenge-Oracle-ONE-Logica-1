@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/images/bgHome.jpg");
+  opacity: 0.95;
+  background-size: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  text-align: center;
+  color: rgb(32, 18, 82)
+}
+
+h1 {
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.9rem;
+}
+
+.logo-alura {
+  width: 4rem;
+  height: 5rem;
+  padding: 1rem;
+}
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.box {
+  text-align: center;
+  padding: 2rem;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+  background-color: white;
+  border-radius: .5rem;
+  width: 50vw;
+  height: 70vh;
+}
+
+#msg {
+  width: 35vw;
+  height: 45vh;
+}
+
+#inputTexto {
+  width: 35vw;
+  height: 45vh;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 16px;
+
+}
+
+.texto {
+  font-size: 18px;
+  color: rgb(32, 18, 82)
+}
+
+#titulo2 {
+  font-size: 18px;
+  color: rgb(32, 18, 82)
+}
+
+.botaoCriptografar {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  background-color: rgb(236, 49, 152);
+  padding: 11px;
+  margin-top: 10px;
+  border-radius: 0.4em;
+}
+
+.botaoDescriptografar {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  background-color: rgb(236, 49, 152);
+  padding: 11px;
+  margin-top: 10px;
+  border-radius: 0.4em;
+}
+
+.botaoCopiar {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  background-color: rgb(236, 49, 152);
+  padding: 11px;
+  margin-top: 10px;
+  border-radius: 0.4em;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+
+
+}

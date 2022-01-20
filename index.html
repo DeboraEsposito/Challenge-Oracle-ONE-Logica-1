@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Challenge Oracle ONE</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="logo">
+    <img src="/images/Vector.svg" class="logo-alura">
+    <h1 class="titulo">Alura Criptografia</h1>
+  </header>
+    
+  
+
+  <main class="main">
+    <section class="form box">
+      <form id="form-entrada">
+        <label for="input-texto" class="texto">O texto deve conter somente letras maísculas e sem acento</label>
+        <input class="text-input" type="text" name="inputTexto" id="inputTexto" placeholder="insira o texto aqui">
+        <button class="botaoCriptografar" id="btn-cripto">Criptografar</button>
+        <button class="botaoDescriptografar" id="btn-descripto">Descriptografar</button>
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <p id="titulo2">Mensagem</p>
+      <p id="titulo2">criptografada:</p>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="botaoCopiar" type="submit" value="Copiar" id="btn-copy">
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/funcoes.js"></script>
+</body>
+</html>
