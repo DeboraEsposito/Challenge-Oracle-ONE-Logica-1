@@ -1,7 +1,9 @@
 botaoCriptografar = document.querySelector('#btn-cripto');
 botaoDescriptografar = document.querySelector('#btn-descripto')
+botaoCopiar = document.querySelector('#btn-copy')
 
 var textoCriptografado = '';
+var textoCapturado = '';
 
 /*Função Criptografar*/
 
@@ -16,10 +18,10 @@ botaoCriptografar.addEventListener("click", function criptografar(event){
     textoCapturado = textoCapturado.replaceAll('i', 'imes');
     textoCapturado = textoCapturado.replaceAll('a','ai'); 
     textoCapturado = textoCapturado.replaceAll('o','ober'); 
-    textoCapturado = textoCapturado.replaceAll('u','ufat');           
+    textoCapturado = textoCapturado.replaceAll('u','ufat');
+    document.querySelector('#msg').value =textoCapturado;          
       
-  return console.log(textoCapturado);
-  
+  form.reset();
 })
 
 /*função Descriptografar*/
@@ -35,23 +37,16 @@ botaoDescriptografar.addEventListener("click", function descriptografar(event){
     textoCriptografado = textoCriptografado.replaceAll('ai','a'); 
     textoCriptografado = textoCriptografado.replaceAll('ober','o'); 
     textoCriptografado = textoCriptografado.replaceAll('ufat','u'); 
-         
-     
-return console.log(textoCriptografado);
+    document.querySelector('#msg').value =textoCriptografado;
  
 })
 
-/*Exibir texto criptografado*/
+/*Função Copiar*/
 
-
-
-
-
-
-
-
-
-
+botaoCopiar.addEventListener("click", function copiar(){
+  navigator.clipboard.writeText(document.querySelector('#msg').value); 
+    
+})
 /* Regras Codificador: 
 "e" é convertido para "enter" 
 "i" é convertido para "imes"

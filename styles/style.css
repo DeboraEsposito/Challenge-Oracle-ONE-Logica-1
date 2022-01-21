@@ -1,22 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 body {
-  background-image: url("/images/bgHome.jpg");
+  /*background-image: url("/images/bgHome.jpg");*/
+  background-color: rgb(239, 241, 243);
   opacity: 0.95;
   background-size: 100%;
   font-family: 'Inter', sans-serif;
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.7);
+
 }
 
 .logo {
+  background-color: rgb(255, 255, 255);
   display: flex;
   width: 100%;
-  height: 7rem;
+  height: 6rem;
   text-align: center;
-  color: rgb(32, 18, 82)
+  color: rgb(32, 18, 82);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
+
 }
 
 h1 {
@@ -32,13 +38,16 @@ h1 {
 }
 
 .main {
-  width: 80vw;
-  margin: auto;
+  width: 90vw;
+  margin: 0rem;
   display: flex;
   justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding-left: 2rem;
+
+
 }
-
-
 
 .box {
   text-align: center;
@@ -47,18 +56,24 @@ h1 {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
   background-color: white;
   border-radius: .5rem;
-  width: 50vw;
-  height: 70vh;
+  width: 25vw;
+  height: 60vh;
+
 }
 
+
+
 #msg {
-  width: 35vw;
-  height: 45vh;
+  width: 20vw;
+  height: 35vh;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 16px;
 }
 
 #inputTexto {
-  width: 35vw;
-  height: 45vh;
+  width: 20vw;
+  height: 35vh;
   padding-top: 2rem;
   text-align: center;
   font-size: 16px;
@@ -67,43 +82,48 @@ h1 {
 
 .texto {
   font-size: 18px;
-  color: rgb(32, 18, 82)
+  color: rgb(121, 121, 121);
 }
 
 #titulo2 {
   font-size: 18px;
-  color: rgb(32, 18, 82)
+  color: rgb(121, 121, 121);
+
 }
 
 .botaoCriptografar {
   border: 0;
+  width: 8.5rem;
+  height: 2.5rem;
   color: white;
   font-weight: bold;
   font-size: medium;
-  background-color: rgb(236, 49, 152);
-  padding: 11px;
+  background-color: rgb(23, 91, 180);
   margin-top: 10px;
   border-radius: 0.4em;
 }
 
 .botaoDescriptografar {
   border: 0;
+  width: 8.5rem;
+  height: 2.5rem;
+  color: white;
   color: white;
   font-weight: bold;
   font-size: medium;
-  background-color: rgb(236, 49, 152);
-  padding: 11px;
+  background-color: rgb(23, 91, 180);
   margin-top: 10px;
   border-radius: 0.4em;
 }
 
 .botaoCopiar {
   border: 0;
+  width: 8.5rem;
+  height: 2.5rem;
   color: white;
   font-weight: bold;
   font-size: medium;
-  background-color: rgb(236, 49, 152);
-  padding: 11px;
+  background-color: rgb(23, 91, 180);
   margin-top: 10px;
   border-radius: 0.4em;
 }
@@ -111,7 +131,36 @@ h1 {
 .text-input {
   border-radius: 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
 
+.rodape-prin {
+  background-color: rgb(255, 255, 255);
+  clear: both;
+  padding: 10px;
+  color: rgb(92, 91, 91);
+  font-size: 15px;
+  font-family: "arial", sans-serif;
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.7);
+  margin-top: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
+}
+
+#intro {
+  font-size: 15px;
+  color: rgb(68, 68, 68);
+  justify-content: center;
+  text-align: center;
+
+  padding-left: 7rem;
+
+}
+
+#img {
+  width: 30vh;
+  justify-content: center;
+  text-align: center;
 
 }
