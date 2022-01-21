@@ -93,39 +93,54 @@ h1 {
 
 .botaoCriptografar {
   border: 0;
-  width: 8.5rem;
-  height: 2.5rem;
+  width: 8rem;
+  height: 2rem;
   color: white;
   font-weight: bold;
-  font-size: medium;
+  font-size: small;
   background-color: rgb(23, 91, 180);
   margin-top: 10px;
   border-radius: 0.4em;
+}
+
+.botaoCriptografar:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .botaoDescriptografar {
   border: 0;
-  width: 8.5rem;
-  height: 2.5rem;
+  width: 8rem;
+  height: 2rem;
   color: white;
   color: white;
   font-weight: bold;
-  font-size: medium;
+  font-size: small;
   background-color: rgb(23, 91, 180);
   margin-top: 10px;
   border-radius: 0.4em;
 }
 
+.botaoDescriptografar:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .botaoCopiar {
   border: 0;
-  width: 8.5rem;
-  height: 2.5rem;
+  width: 8rem;
+  height: 2rem;
   color: white;
   font-weight: bold;
-  font-size: medium;
+  font-size: small;
   background-color: rgb(23, 91, 180);
   margin-top: 10px;
   border-radius: 0.4em;
+}
+
+.botaoCopiar:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .text-input {
@@ -141,7 +156,7 @@ h1 {
   font-size: 15px;
   font-family: "arial", sans-serif;
   box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.7);
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   justify-content: center;
   align-items: center;
   text-align: center;
