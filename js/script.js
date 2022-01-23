@@ -11,18 +11,18 @@ botaoCriptografar.addEventListener("click", function criptografar(event){
  
   form = document.querySelector("#form-entrada");
   var textoCapturado = form.inputTexto.value;
-  
+
     textoCapturado = textoCapturado.replaceAll('e','enter');    
     textoCapturado = textoCapturado.replaceAll('i', 'imes');
     textoCapturado = textoCapturado.replaceAll('a','ai'); 
     textoCapturado = textoCapturado.replaceAll('o','ober'); 
     textoCapturado = textoCapturado.replaceAll('u','ufat');
-    textoCapturado = textoCapturado.replaceAll(/[0-9]/g, numeroInvalido);
-      
+    textoCapturado = textoCapturado.replaceAll(/[0-9]/g, 'Digite apenas letras minusculas sem acentos');
+    textoCapturado = textoCapturado.replaceAll(/^[A-Z-aáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]/g, 'Digite apenas letras minusculas sem acentos')     
     
-    document.querySelector('#msg').value = textoCapturado;   
+    document.querySelector('#msg').value = textoCapturado;
 
-  form.reset();
+    form.reset();
   
 })
 
@@ -49,16 +49,12 @@ botaoCriptografar.addEventListener("click", function criptografar(event){
 
 botaoCopiar.addEventListener("click", function copiar(){
   navigator.clipboard.writeText(document.querySelector('#msg').value); 
+
+  form.reset();
+
     
 })
 
-/*Função não aceita numeros*/
 
-function numeroInvalido(){
-  
-  alert('Não são aceitos número')
 
-  return(' Inválido ')
-}
 
-/*Função não aceita letras maiúsculas*/
