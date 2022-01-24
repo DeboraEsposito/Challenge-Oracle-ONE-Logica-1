@@ -17,27 +17,28 @@
 
 </head>
 <body>
+
   <header class="logo">
     <img src="./images/Vector.svg" class="logo-alura">
     <h1 class="titulo">Alura Criptografia</h1>
-  </header>
-    
-  
+  </header>  
 
   <main class="main">
     <section class="form box">
       <form id="form-entrada">
-        <label for="input-texto" class="texto">O texto deve conter somente letras minúsculas e sem acento</label>
-        <input class="text-input" type="text" name="inputTexto" id="inputTexto" placeholder="insira o texto aqui" autocomplete="off">
+        <p id="titulo2">Digite seu texto aqui:</p>
+        <br>
+        <textarea contenteditable="auto" class="text-input" type="text" name="inputTexto" id="inputTexto" placeholder="insira o texto aqui" autocomplete="off"></textarea>        
         <button class="botaoCriptografar" id="btn-cripto">Criptografar</button>
         <button class="botaoDescriptografar" id="btn-descripto">Descriptografar</button>
       </form>
     </section>
   
     <section class="msg box">
-      <p id="titulo2">Mensagem</p>
-      <p id="titulo2">criptografada:</p>
-      <input class="text-input" type="textarea" id="msg"></input>
+      <p id="titulo2">Mensagem Criptografada:</p>
+      <br>
+      <textarea contenteditable="auto" class="text-input" type="textarea" id="msg" placeholder="Seu texto codificado"></textarea>
+     
       <input class="botaoCopiar" type="submit" value="Copiar" id="btn-copy">
     </section>
     <section id="intro">
@@ -58,12 +59,16 @@
         <p>3 - Veja seu texto criptografado</p>
         <br>
         <p>Agora você pode copiar seu texto e transmitir mensagens secretas!!</p>
-    </div>
-    
-    </section>
-    
+        <br>
+        <h4> NÃO SÃO PERMITIDOS LETRAS MAIÚSCULAS, </h4>
+        <br>
+        <h4> NÚMEROS E CARACTERES ESPECIAIS.</h4>
+        
+    </div>    
+  </section> 
    
   </main>
+  
   <footer class="rodape-prin">
     <section id='botao-cont'>
       <h4 id="desenvonvedor">&copy; Débora Espósito</h4> 

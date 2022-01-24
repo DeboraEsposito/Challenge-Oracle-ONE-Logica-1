@@ -12,15 +12,19 @@ botaoCriptografar.addEventListener("click", function criptografar(event){
   form = document.querySelector("#form-entrada");
   var textoCapturado = form.inputTexto.value;
 
+  if(!textoCapturado.match(/ai|enter|imes|ober|ufat/)){
+    
     textoCapturado = textoCapturado.replaceAll('e','enter');    
     textoCapturado = textoCapturado.replaceAll('i', 'imes');
     textoCapturado = textoCapturado.replaceAll('a','ai'); 
     textoCapturado = textoCapturado.replaceAll('o','ober'); 
     textoCapturado = textoCapturado.replaceAll('u','ufat');
-    textoCapturado = textoCapturado.replaceAll(/[0-9]/g, 'Digite apenas letras minusculas sem acentos');
-    textoCapturado = textoCapturado.replaceAll(/^[A-Z-aáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]/g, 'Digite apenas letras minusculas sem acentos')     
+    textoCapturado = textoCapturado.replaceAll(/[0-9]/g, '');
+    textoCapturado = textoCapturado.replaceAll(/^[A-Z-À-ü\W]/g, '') 
     
     document.querySelector('#msg').value = textoCapturado;
+    
+  } 
 
     form.reset();
   
@@ -51,7 +55,6 @@ botaoCopiar.addEventListener("click", function copiar(){
   navigator.clipboard.writeText(document.querySelector('#msg').value); 
 
   form.reset();
-
     
 })
 
