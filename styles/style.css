@@ -92,7 +92,6 @@ h1 {
 }
 
 .botaoCriptografar {
-  border: 0;
   width: 8rem;
   height: 2rem;
   color: white;
@@ -101,8 +100,6 @@ h1 {
   background-color: rgb(23, 91, 180);
   margin-top: 10px;
   border-radius: 0.4em;
-  margin-right: 1rem;
-  margin-top: 1.6rem;
 }
 
 .botaoCriptografar:hover {
@@ -113,10 +110,9 @@ h1 {
 }
 
 .botaoDescriptografar {
-  border: 0;
+
   width: 8rem;
   height: 2rem;
-  color: white;
   color: white;
   font-weight: bold;
   font-size: small;
@@ -135,7 +131,6 @@ h1 {
 }
 
 .botaoCopiar {
-  border: 0;
   width: 8rem;
   height: 2rem;
   color: white;
@@ -144,7 +139,6 @@ h1 {
   background-color: rgb(23, 91, 180);
   margin-top: 10px;
   border-radius: 0.4em;
-  margin-top: 1.6rem;
 }
 
 .botaoCopiar:hover {
@@ -198,19 +192,21 @@ h1 {
 
 /*Resposividade*/
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1300px) {
 
   * {
     box-sizing: none;
   }
 
   .logo {
-    height: auto;
+    height: 4rem;
+    width: auto;
   }
 
   h1 {
     text-align: center;
-    padding-top: .5rem;
+    justify-content: space-around;
+    padding-top: 2rem;
     font-size: 20px;
   }
 
@@ -218,6 +214,7 @@ h1 {
     width: 2rem;
     height: 3rem;
     padding: .5rem;
+    text-align: center;
   }
 
   .main {
@@ -272,6 +269,71 @@ h1 {
     margin-top: 1rem;
     font-size: 18px;
     color: rgb(121, 121, 121);
+
+  }
+
+  .botaoCriptografar {
+    border: 0;
+    width: 40%;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 60%;
+    background-color: rgb(23, 91, 180);
+    margin-top: 10px;
+    border-radius: 0.4em;
+    margin-right: 1rem;
+    margin-top: 1.6rem;
+  }
+
+  .botaoCriptografar:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: rgb(62, 155, 236);
+    cursor: pointer;
+  }
+
+  .botaoDescriptografar {
+    border: 0;
+    width: 40%;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 60%;
+    background-color: rgb(23, 91, 180);
+    margin-top: 10px;
+    border-radius: 0.4em;
+    margin-right: 1rem;
+    margin-top: 1.6rem;
+
+  }
+
+  .botaoDescriptografar:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: rgb(62, 155, 236);
+    cursor: pointer;
+
+  }
+
+  .botaoCopiar {
+    border: 0;
+    width: 40%;
+    height: 2rem;
+    color: white;
+    font-weight: bold;
+    font-size: 60%;
+    background-color: rgb(23, 91, 180);
+    margin-top: 10px;
+    border-radius: 0.4em;
+    margin-top: 1.6rem;
+  }
+
+  .botaoCopiar:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: rgb(62, 155, 236);
+    cursor: pointer;
 
   }
 }

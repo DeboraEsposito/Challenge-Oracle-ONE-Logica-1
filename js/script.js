@@ -12,7 +12,7 @@ botaoCriptografar.addEventListener("click", function criptografar(event){
   form = document.querySelector("#form-entrada");
   var textoCapturado = form.inputTexto.value;
 
-  if(!textoCapturado.match(/ai|enter|imes|ober|ufat/)){
+  if(!textoCapturado.match(/enter|imes|ober|ufat/)){
     
     textoCapturado = textoCapturado.replaceAll('e','enter');    
     textoCapturado = textoCapturado.replaceAll('i', 'imes');
